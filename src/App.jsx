@@ -6,7 +6,11 @@ import './App.css'
 function App() {
 
   useGSAP(() => {
-    gsap.from('.penis', {opacity: 0})
+    
+    gsap.from('.test span', {opacity: 0, duration: .001, delay: .4, stagger: .1})
+
+    gsap.from('.blink', {opacity: 0, delay: .3, yoyo: true, repeat: -1 })
+
   });
   
 
@@ -14,7 +18,21 @@ function App() {
     <>   
       <br></br>
       <br></br>
-      <div className="font-argon font-extrabold text-green-500 text-5xl drop-shadow-glow content-center text-center penis" >What is up fans</div>
+      <div className="font-argon text-green-500 text-8xl drop-shadow-glow content-center text-center test" >
+        <span>T</span>
+        <span>e</span>
+        <span>s</span>
+        <span>t</span>
+        <span>i</span>  
+        <span>n</span>
+        <span>g</span>
+        <span> </span> 
+        <span>G</span>
+        <span>l</span>
+        <span>o</span>
+        <span>w</span>
+        <span className="blink">_</span>
+      </div>
     </>
   )
 }
