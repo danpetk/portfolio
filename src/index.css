@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    html {
+        @apply bg-gradient-to-r from-black via-secondary to-primary;
+    }
+}
+
+@font-face {
+    font-family: Argon;
+    src: url("../public/fonts/MonaspaceArgon-SemiBold.woff");
+}
