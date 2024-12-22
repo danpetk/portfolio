@@ -4,11 +4,41 @@
 
 @layer base {
     html {
-        @apply bg-gradient-to-r from-black via-secondary to-primary;
+        @apply bg-secondary; /* Default background for smaller screens */
+    }
+    
+    @screen md {
+        html {
+            @apply bg-gradient-to-r from-secondary to-primary;
+        }
     }
 }
 
 @font-face {
     font-family: Argon;
-    src: url("../public/fonts/MonaspaceArgon-SemiBold.woff");
+    src: url("/fonts/MonaspaceArgon-SemiBold.woff");
 }
+
+@font-face {
+    font-family: Jetbrains;
+    src: url("/fonts/JetBrainsMono-Bold.woff2")
+}
+
+html {
+    font-size: 8px;
+    
+    @screen md {
+        font-size: 12px;
+    }
+    @screen lg {
+      font-size: 14px;
+    }
+    @screen xl{
+        font-size: 16px
+    }
+
+    @screen 2xl{
+        font-size: 18px;
+    }
+  }
+

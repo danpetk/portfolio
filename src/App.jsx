@@ -1,40 +1,21 @@
-import { useRef } from 'react'
-import gsap from 'gsap'
-import {useGSAP} from '@gsap/react'
 import './App.css'
+import GlowingHeader from './GlowingHeader'
+import BriefInfo from './BriefInfo'
+import AnimatedHeader from './AnimatedHeader'
 
 function App() {
 
-  useGSAP(() => {
-    
-    gsap.from('.test span', {opacity: 0, duration: .001, delay: .4, stagger: .1})
-
-    gsap.from('.blink', {opacity: 0, delay: .3, yoyo: true, repeat: -1 })
-
-  });
-  
-
   return (
-    <>   
-      <br></br>
-      <br></br>
-      <div className="font-argon text-green-500 text-8xl drop-shadow-glow content-center text-center test" >
-        <span>T</span>
-        <span>e</span>
-        <span>s</span>
-        <span>t</span>
-        <span>i</span>  
-        <span>n</span>
-        <span>g</span>
-        <span> </span> 
-        <span>G</span>
-        <span>l</span>
-        <span>o</span>
-        <span>w</span>
-        <span className="blink">_</span>
+    <>
+      <div className="grid grid-cols-1 px-16 place-items-center overflow-visible">
+        <GlowingHeader headerTextArray={["testing test", "testing testing test"]}/>
+        <BriefInfo/>
+        <AnimatedHeader headerText={"Work Experience"}/>
+        <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br> testing
+        
       </div>
     </>
-  )
+  ) 
 }
 
 export default App
