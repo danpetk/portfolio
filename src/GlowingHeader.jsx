@@ -6,6 +6,30 @@ function GlowingHeader({headerTextArray}) {
     
     useGSAP(() => {
         gsap.set(".typeeffect2 span", {opacity: 0})
+       
+        // const glowingHeaderTimeline = gsap.timeline()
+
+        // glowingHeaderTimeline
+        // .from('.typeeffect1 span', {
+        //     opacity: 0, 
+        //     duration: 0.0001, 
+        //     delay: 0.75, 
+        //     stagger: 0.05})
+        // .to('.typeeffect2 span', {
+        //     opacity: 1, 
+        //     duration: 0.0001, 
+        //     delay: 0.75, 
+        //     stagger: 0.05})
+        // .from('.blink', {
+        //     opacity: 0, 
+        //     delay: 0.3, 
+        //     duration: 0.001, 
+        //     yoyo: true, 
+        //     repeat: -1, 
+        //     repeatDelay: 0.63
+        // });
+            
+
         gsap.from('.typeeffect1 span', {
             opacity: 0, 
             duration: 0.0001, 

@@ -1,7 +1,8 @@
 import './App.css'
 import GlowingHeader from './GlowingHeader'
 import BriefInfo from './BriefInfo'
-import AnimatedHeader from './AnimatedHeader'
+import WorkExperience from './WorkExperience'
+import { createContext, useContext, useState } from 'react'
 
 function App() {
 
@@ -10,9 +11,10 @@ function App() {
       <div className="grid grid-cols-1 px-16 place-items-center overflow-visible">
         <GlowingHeader headerTextArray={["testing test", "testing testing test"]}/>
         <BriefInfo/>
-        <AnimatedHeader headerText={"Work Experience"}/>
-        <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br> testing
+        <WorkExperience/>
         
+        
+        <div className='h-[3000px]'></div>
       </div>
     </>
   ) 

@@ -6,11 +6,20 @@ function BriefInfo() {
 
 
     useGSAP(() => {
-        gsap.from('.topinfo', {opacity: 0, y: -15, duration: 0.6, delay: 3.3, ease: "power1.out"})
-        gsap.from('.bottominfo', {opacity: 0, y: 15, duration: 0.6, delay: 3.4, ease: "power1.out"})
-        gsap.from('.downArrow', {opacity: 0, y: -15, duration: .6, delay: 3.5, ease: "power1.out", onComplete: () =>{
-            gsap.to('.downArrowa', {y: -10, duration: 2, delay: .2, ease: "expo.inOut", yoyo: true, repeat: -1 })
-        }})
+
+        const briefInfoTimeline = gsap.timeline()
+
+        briefInfoTimeline
+        .from('.topinfo', {opacity: 0, y: -15, duration: 0.6, delay: 3.3, ease: "power1.out"})
+        .from('.bottominfo', {opacity: 0, y: 15, duration: 0.6, ease: "power1.out"}, "<+=.1")
+        .from('.downArrow', {opacity: 0, y: -15, duration: .6,  ease: "power1.out"}, "<+=.1")
+        
+        //
+        //gsap.from('.topinfo', {opacity: 0, y: -15, duration: 0.6, delay: 3.3, ease: "power1.out"})
+        //gsap.from('.bottominfo', {opacity: 0, y: 15, duration: 0.6, delay: 3.4, ease: "power1.out"})
+        //gsap.from('.downArrow', {opacity: 0, y: -15, duration: .6, delay: 3.5, ease: "power1.out", onComplete: () =>{
+        //    gsap.to('.downArrowa', {y: -10, duration: 2, delay: .2, ease: "expo.inOut", yoyo: true, repeat: -1 })
+        //}})
     })
 
 

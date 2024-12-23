@@ -1,13 +1,11 @@
 import gsap from 'gsap'
 import {useGSAP} from '@gsap/react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
 // Register ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
 
-function GlowingHeader({headerText}) {
+function AnimatedHeader({headerText}) {
 
-    
     useGSAP(() => {
         gsap.set('.headerTypeEffect span', {opacity: 0})
         gsap.from('.headerBracket', {
@@ -48,5 +46,5 @@ function GlowingHeader({headerText}) {
     )
 }
 
-export default GlowingHeader
+export default AnimatedHeader
 
