@@ -2,6 +2,7 @@ import gsap from 'gsap'
 import {useGSAP} from '@gsap/react'
 import dsLogo from "./assets/DSLogo.png"
 import AnimatedHeader from './AnimatedHeader.jsx'
+import SkillItem from './SkillItem.jsx'
 
 function WorkExperience() {
     
@@ -9,16 +10,29 @@ function WorkExperience() {
         <>    
             <AnimatedHeader headerText={"Work Experience"} />
 
-            <div className=" text-white text-2xl leading-tight container overflow-visible px-20 font-jetbrains">
-                <div className='w-[100%] overflow-visible border-neonheader bg-gray-900 grid grid-cols-3 grid-rows-2 rounded-lg '>
-                    <div className='titleLine p-4 flex col-span-3'>
-                        <div className='workImage'><img className='h-28 rounded-lg' src={dsLogo}></img></div>
-                        <div className='pl-4 py-3 flex flex-col justify-around'>
+            <div className=" text-white text-2xl leading-tight container overflow-visible px-20  font-jetbrains">
+                <div className='w-[100%] overflow-visible border-neonheader bg-gray-900 rounded-lg p-4'>
+                    <div className='titleLine flex'>
+                        <img className='h-28 rounded-lg' src={dsLogo}></img>
+                        <div className='pl-4 flex flex-col justify-around'>
                             <div className='text-4xl'>Dassault Systèmes</div>
-                            <div className='text-2xl leading-10'>R&D Web Development Intern</div>
+                            <div className='text-xl leading-10'>R&D Web Development Intern</div>
+                            <div className='text-xl'>May-Aug (2024/2025)</div>
                         </div>
                     </div>
-                    <div className='col-span-3'></div>
+                    <div className='skillsList pt-2'>
+                        <SkillItem skillText={"JavaScript"}/> 
+                        <SkillItem skillText={"HTML"}/>
+                        <SkillItem skillText={"CSS"}/>
+                        <SkillItem skillText={"PHP"}/>  
+                        <SkillItem skillText={"SQL"}/>
+                        <SkillItem skillText={"Apache"}/>
+                        <SkillItem altColor={true} skillText={"Unit Testing"}/>
+                        <SkillItem altColor={true} skillText={"Source Control"}/>
+                        <SkillItem altColor={true} skillText={"Debugging"}/>
+                        <SkillItem altColor={true} skillText={"Teamwork"}/>
+
+                    </div>
                 </div>
             </div>
         </>
