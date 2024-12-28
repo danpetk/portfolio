@@ -1,20 +1,30 @@
 import gsap from 'gsap'
 import {useGSAP} from '@gsap/react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useRef } from 'react';
 // Register ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
 
 function AnimatedHeader({headerText}) {
 
+    let headerBracketRef = useRef(null);
+    let headerTextRef = useRef(null);
+
     useGSAP(() => {
-        gsap.set('.headerTypeEffect span', {opacity: 0})
-        gsap.from('.headerBracket', {
+
+        let headerLetters
+        if(headerTextRef.current){
+            headerLetters = headerTextRef.current.querySelectorAll('span')
+        }
+
+        gsap.set(headerLetters, {opacity: 0})
+        gsap.from(headerBracketRef.current, {
             opacity: 0,
             duration: .15,
             x: -15,
-            scrollTrigger: {trigger: '.headerBracket', start: "center 80%"},
+            scrollTrigger: {trigger: headerBracketRef.current, start: "center 80%"},
             onComplete: ()=>{
-                gsap.to('.headerTypeEffect span', {
+                gsap.to(headerLetters, {
                     opacity: 1, 
                     duration: 0.0001, 
                     delay: 0.05, 
@@ -28,13 +38,13 @@ function AnimatedHeader({headerText}) {
     
     return ( 
         <>    
-        <div className="font-argon text-cyan-400 drop-shadow-glowCyan text-4xl leading-tight container py-12 max-w-screen-2xl">
+        <div className="font-argon text-cyan-400 drop-shadow-glowCyan text-4xl leading-tight container py-10 max-w-screen-2xl">
             <div className='container'>
                 <div className='w-[100%] mt-10'>
 
-                            <span className='headerBracket inline-block'>&gt;</span>
+                            <span ref={headerBracketRef} className='headerBracket inline-block'>&gt;</span>
                             <span> </span>
-                            <span className='headerTypeEffect'>
+                            <span ref={headerTextRef} className='headerTypeEffect'>
                                 {headerText.split('').map((char,index) => {  
                                     return <span key={index}>{char}</span>
                                 })}

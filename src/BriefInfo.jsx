@@ -25,7 +25,7 @@ function BriefInfo() {
 
     return (
         <>   
-        <div className=" text-white text-3xl text-center leading-tight container mt-6 overflow-visible px-32 font-jetbrains">
+        <div className=" text-white text-3xl text-center leading-tight container mt-6 overflow-visible px-16 md:px-32 font-jetbrains">
             <div className='w-[100%] overflow-visible flex flex-col items-center'>
                 <div className='topinfo'>My name is Daniel Petkoski. I'm a passionate computer science student at Michigan State University with a minor in math.</div><br></br>
                 <div className='bottominfo'>You can contact me for my resume or scroll down for an overview!</div><br></br>
