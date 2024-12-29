@@ -17,7 +17,7 @@ function WorkExperience() {
                         <div className='pl-4 flex flex-col justify-around'>
                             <div className='text-4xl'>Dassault Systèmes</div>
                             <div className='text-xl leading-10'>R&D Web Development Intern</div>
-                            <div className='text-xl'>May-Aug (2024/2025)</div>
+                            <div className='text-xl'>May - Aug (2024/2025)</div>
                         </div>
                     </div>
                     <div className='skillsList pt-2'>

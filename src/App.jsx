@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      <div className="grid grid-cols-1 px-16 place-items-center overflow-visible">
+      <div className="grid grid-cols-1 px-16 place-items-center overflow-visible min-w-[350px]">
         <GlowingHeader headerTextArray={["hey, i'm dan", "welcome to my website"]}/>
         <BriefInfo/>
         <WorkExperience/>
