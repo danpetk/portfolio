@@ -62,7 +62,7 @@ function GlowingHeader({headerTextArray}) {
         <>    
         <div className="font-argon text-neonheader text-6xl drop-shadow-glowGreen leading-tight container py-24 max-w-screen-2xl">
             <div className='container'>
-                <div className='w-[100%] mt-10'>
+                <div className='w-[100%]'>
                     
                     {headerTextArray.map((headerText,key) => {
                         lineNum++

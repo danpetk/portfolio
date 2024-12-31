@@ -29,7 +29,7 @@ function WorkExperience() {
                         <SkillItem skillText={"Apache"}/>
                         <SkillItem altColor={true} skillText={"Unit Testing"}/>
                         <SkillItem altColor={true} skillText={"Source Control"}/>
-                        <SkillItem altColor={true} skillText={"Debugging"}/>
+                        <SkillItem altColor={true} skillText={"Refactoring"}/>
                         <SkillItem altColor={true} skillText={"Teamwork"}/>
 
                     </div>
