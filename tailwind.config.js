@@ -5,6 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",],
   theme: {
     extend: {
+      fontSize: {
+        '1.5xl': '1.375rem', // Adjust this value as needed (e.g., 22px equivalent in rem)
+      },
       fontFamily: {
         "argon": ["Argon", "sans-serif"],
         "jetbrains": ["Jetbrains", "sans-serif"]

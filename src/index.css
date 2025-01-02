@@ -9,7 +9,7 @@
     
     @screen md {
         html {
-            @apply bg-gradient-to-r from-secondary to-primary;
+            @apply bg-gradient-to-r from-black via-secondary to-primary;
         }
     }
 }

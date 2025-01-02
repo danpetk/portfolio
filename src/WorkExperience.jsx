@@ -33,7 +33,7 @@ function WorkExperience() {
                         <SkillItem altColor={true} skillText={"Teamwork"}/>
 
                     </div>
-                    <div className='skillsList pt-2 text-2xl md:text-xl'>
+                    <div className='skillsList pt-2 text-1.5xl md:text-xl'>
                         <ul className='list-disc pl-6 pt-2 grid grid-cols-1 gap-2'>
                             <li>Developed internal 3D model library website using the XAMPP tech stack with users around the world</li>
                             <li>Leveraged JS, HTML, and CSS for frontend development alongside PHP to interface with a MariaDB backend </li>

@@ -1,5 +1,4 @@
 
-import deepFry from './assets/deepfry.png'
 import SkillItem from './SkillItem.jsx'
 
 
@@ -24,7 +23,7 @@ function DiscordBotProject() {
                             <SkillItem altColor={true} skillText={"Regular Exp."}/>
                      
                         </div>
-                        <div className='skillsList pt-4 text-2xl md:text-xl'>
+                        <div className='skillsList pt-4 text-1.5xl md:text-xl'>
                             I Developed a Discord bot that modifies media to a user's liking. When provided with an image/video and a list of instructions, the bot downloads the video, parses the instructions using regular expressions, and then uses FFmpeg to apply the necessary conversions before sending it back to the user. 
                         </div>
                     </div>
