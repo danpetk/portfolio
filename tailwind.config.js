@@ -17,7 +17,11 @@ export default {
         glowCyan: [
           "0 0px 25px rgba(34, 211, 238, .25)",
           "0 0px 65px rgba(34, 211, 238, .7)"
-        ]
+        ],
+        glowBlue: [
+          "0 7px 25px rgba(17, 24, 39, .25)",
+          "0 7px 65px rgba(17, 24, 39, .7)"
+        ],
       },
       colors: {
         primary: '#10141a',

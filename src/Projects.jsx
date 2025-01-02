@@ -5,8 +5,6 @@ import AnimatedHeader from './AnimatedHeader.jsx'
 import DiscordBotProject from './DiscordBotProject.jsx'
 import PortfolioProject from './PortfolioProject.jsx'
 
-import deepFry from './assets/deepfry.jpg'
-import SkillItem from './SkillItem.jsx'
 
 function Projects() {
     
@@ -14,7 +12,7 @@ function Projects() {
         <>    
             <AnimatedHeader headerText={"Projects"} />
             
-            <div className='grid grid-cols-2 container px-8 sm:px-20 gap-x-10 gap-y-10'>
+            <div className='grid grid-cols-2 container px-8 sm:px-20 gap-x-10 gap-y-10 drop-shadow-glowBlue'>
                 <DiscordBotProject/>
                 <PortfolioProject/>
             </div>
