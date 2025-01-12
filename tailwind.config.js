@@ -24,7 +24,7 @@ export default {
         glowBlue: [
           "0 7px 25px rgba(17, 24, 39, .25)",
           "0 7px 65px rgba(17, 24, 39, .7)"
-        ],
+        ]
       },
       colors: {
         primary: '#10141a',

@@ -11,7 +11,7 @@ function WorkExperience() {
             <AnimatedHeader headerText={"Work Experience"} />
 
             <div className=" text-white text-2xl leading-tight container overflow-visible px-8 sm:px-20  font-jetbrains">
-                <div className='w-[100%] overflow-visible border-neonheader bg-gray-900 rounded-lg p-4 drop-shadow-glowBlue'>
+                <div className='w-[100%] overflow-visible border-neonheader rounded-lg p-4 drop-shadow-glowBlue'>
                     <div className='titleLine flex'>
                         <img className='h-28 rounded-lg' src={dsLogo}></img>
                         <div className='pl-4 flex flex-col justify-around'>

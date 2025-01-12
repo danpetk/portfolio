@@ -7,7 +7,7 @@ function DiscordBotProject() {
     return ( 
         <>  
                 <div className=" text-white text-2xl leading-tight container overflow-visible  font-jetbrains col-span-2 md:col-span-1  ">
-                    <div className='w-[100%] overflow-visible bg-gray-900 rounded-lg p-4 '>
+                    <div className='w-[100%] overflow-visible  rounded-lg p-4'>
                         <div className='titleLine flex flex-col justify-between'>
               
                             <div className='text-4xl'>Media Converter Discord Bot</div>
