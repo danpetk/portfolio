@@ -29,7 +29,7 @@ function GlowingHeader({headerTextArray}) {
         //     repeatDelay: 0.63
         // });
             
-
+        
         gsap.from('.typeeffect1 span', {
             opacity: 0, 
             duration: 0.0001, 

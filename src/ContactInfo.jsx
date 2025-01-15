@@ -9,8 +9,8 @@ function ContactInfo() {
     
     return ( 
         <>  
-            <AnimatedHeader headerText={'Contact Me'}/>
-        
+            {//<AnimatedHeader headerText={'Contact Me'}/>
+            }   
             <div className=" text-white text-1.5xl text-center leading-tight container overflow-visible px-16 md:px-32 font-jetbrains">
                 <div className='w-[100%] overflow-visible flex flex-col items-start gap-4'>
                     <div><img className="-translate-y-0.5 inline-block h-8 mr-4" src={EmailLogo}></img><span>danielpetkoski@outlook.com</span></div>

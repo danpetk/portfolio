@@ -2,6 +2,7 @@ import gsap from 'gsap'
 import {useGSAP} from '@gsap/react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useRef } from 'react';
+import { useTimeline } from './TimelineProvider';
 // Register ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
 
@@ -9,6 +10,7 @@ function AnimatedHeader({headerText}) {
 
     let headerBracketRef = useRef(null);
     let headerTextRef = useRef(null);
+    const timeline = useTimeline();
 
     useGSAP(() => {
 
@@ -18,7 +20,8 @@ function AnimatedHeader({headerText}) {
         }
 
         gsap.set(headerLetters, {opacity: 0})
-        gsap.from(headerBracketRef.current, {
+    
+        timeline.from(headerBracketRef.current, {
             opacity: 0,
             duration: .15,
             x: -15,
@@ -32,7 +35,7 @@ function AnimatedHeader({headerText}) {
                 });
             }    
         })    
-    });
+    }, [timeline]);
     
     
     

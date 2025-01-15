@@ -25,7 +25,7 @@ function PortfolioProject() {
                             <SkillItem altColor={true} skillText={"Animations"}/>
                         </div>
                         <div className='skillsList pt-4 text-1.5xl md:text-xl'>
-                            This personal website is my first attempt at making a website from scratch. I used React's components and hooks to organize code and create reusable UI elements (like this project bubble). I used TailwindCSS because it makes styling quicker and faster, especially when designing for multiple screen sizes. I used GSAP to streamline animations.
+                            This personal website is my first attempt at making a website from scratch. I used React's components and hooks to organize code and create reusable UI elements (like these projects). I used TailwindCSS because it makes styling quicker and faster, especially when designing for multiple screen sizes. I used GSAP to streamline animations.
                         </div>
                     </div>
                 </div>
