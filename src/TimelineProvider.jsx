@@ -12,8 +12,7 @@ const TimelineContext = createContext()
 export const TimelineProvider = ({ children }) => {
 
   const scrollRef = useRef(null);
-
-  const timeline = useRef(gsap.timeline({scrollTrigger: {trigger: scrollRef.current, start: "center 80%"}}))
+  const timeline = useRef(gsap.timeline())
 
   return (
     <TimelineContext.Provider ref={scrollRef} value={timeline.current}>
