@@ -12,6 +12,8 @@ function AnimatedHeader({headerText}) {
     let headerTextRef = useRef(null);
     const timeline = useTimeline();
 
+
+
     useGSAP(() => {
 
         let headerLetters
@@ -20,21 +22,19 @@ function AnimatedHeader({headerText}) {
         }
 
         gsap.set(headerLetters, {opacity: 0})
-    
-        timeline.from(headerBracketRef.current, {
-            opacity: 0,
-            duration: .15,
-            x: -15,
-            scrollTrigger: {trigger: headerBracketRef.current, start: "center 80%"},
-            onComplete: ()=>{
-                gsap.to(headerLetters, {
-                    opacity: 1, 
-                    duration: 0.0001, 
-                    delay: 0.05, 
-                    stagger: 0.03, 
-                });
-            }    
-        })    
+        gsap.set(headerBracketRef.current, {opacity: 0, x: -15})
+            
+            timeline.to(headerBracketRef.current, {
+                opacity: 1,
+                duration: .2,
+                x: 15,                 
+            }).to(headerLetters, {
+                opacity: 1, 
+                duration: 0.0001, 
+                delay: 0.05, 
+                stagger: 0.03, 
+            });    
+            
     }, [timeline]);
     
     

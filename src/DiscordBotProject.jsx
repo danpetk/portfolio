@@ -1,12 +1,24 @@
+import gsap from 'gsap'
+import {useGSAP} from '@gsap/react'
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useRef } from 'react';
+import { useTimeline } from './TimelineProvider';
 
 import SkillItem from './SkillItem.jsx'
 
 
+
 function DiscordBotProject() {
-    
+
+    const timeline = useTimeline()
+
+    useGSAP(() => {
+        timeline.to(".cracker", {x:50})
+    })
+
     return ( 
         <>  
-                <div className=" text-white text-2xl leading-tight container overflow-visible  font-jetbrains col-span-2 md:col-span-1  ">
+                <div className="cracker text-white text-2xl leading-tight container overflow-visible  font-jetbrains col-span-2 md:col-span-1  ">
                     <div className='w-[100%] overflow-visible  rounded-lg p-4'>
                         <div className='titleLine flex flex-col justify-between'>
               

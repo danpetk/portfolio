@@ -1,13 +1,26 @@
-
+import gsap from 'gsap'
+import {useGSAP} from '@gsap/react'
+import { useRef } from 'react';
+import { useTimeline } from './TimelineProvider';
 import SkillItem from './SkillItem.jsx'
 import dsLogo from "./assets/DSLogo.png"
 
 
+
 function Dassault() {
+
+    let mainContainer = useRef(null)
+    let timeline = useTimeline()
+
+    useGSAP(() => {
+
+        timeline.from(mainContainer.current, {opacity: 0, duration: 1})
+    }, [timeline]);
     
+
     return ( 
         <>  
-            <div className=" text-white text-2xl leading-tight container overflow-visible px-8 sm:px-20  font-jetbrains">
+            <div ref={mainContainer} className=" text-white text-2xl leading-tight container overflow-visible px-8 sm:px-20  font-jetbrains">
                 <div className='w-[100%] overflow-visible border-neonheader rounded-lg p-4 drop-shadow-glowBlue'>
                     <div className='titleLine flex'>
                         <img className='h-28 rounded-lg' src={dsLogo}></img>
