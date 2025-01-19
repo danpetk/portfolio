@@ -1,24 +1,20 @@
-import EmailLogo from "./assets/emailsvg.svg"
-import GithubLogo from "./assets/githubsvg.svg"
-import LinkedInLogo from "./assets/linkedinsvg.svg"
+
 import AnimatedHeader from "./AnimatedHeader"
+import Links from "./Links"
+
+import { TimelineProvider } from "./TimelineProvider"
 
 
 
 function ContactInfo() {
-    
+
+
     return ( 
         <>  
-            {//<AnimatedHeader headerText={'Contact Me'}/>
-            }   
-            <div className=" text-white text-1.5xl text-center leading-tight container overflow-visible px-16 md:px-32 font-jetbrains">
-                <div className='w-[100%] overflow-visible flex flex-col items-start gap-4'>
-                    <div><img className="-translate-y-0.5 inline-block h-8 mr-4" src={EmailLogo}></img><span>danielpetkoski@outlook.com</span></div>
-                    <div><img className="-translate-y-0.5 inline-block h-10 mr-4" src={GithubLogo}></img><a className='underline text-cyan-400' href="https://github.com/DanielPetk">https://github.com/DanielPetk</a></div>
-                    <div><img className="-translate-y-0.5 inline-block h-10 mr-4" src={LinkedInLogo}></img><a className="underline text-cyan-400" href="https://www.linkedin.com/in/danielpetkoski/">https://www.linkedin.com/in/danielpetkoski/</a></div>
-                </div>
-            </div>
-           
+        <TimelineProvider>
+            <AnimatedHeader headerText={'Contact Me'}/>
+            <Links/>
+        </TimelineProvider>
         </>
     )
 }

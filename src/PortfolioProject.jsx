@@ -1,12 +1,25 @@
+import gsap from 'gsap'
+import {useGSAP} from '@gsap/react'
+import { useRef } from 'react';
+import { useTimeline } from './TimelineProvider';
 
 import SkillItem from './SkillItem.jsx'
 
 
-function PortfolioProject() {
+function PortfolioProject({gsapUp}) {
+
     
+    const timeline = useTimeline()
+    let mainRef = useRef(null)
+
+    let animDirScale = gsapUp ? 1 : -1
+    useGSAP(() => {
+        timeline.from(mainRef.current, {y:15 * animDirScale, opacity:0, duration: .45,}, "<.1")
+    })
+
     return ( 
         <>  
-                <div className=" text-white text-2xl leading-tight container overflow-visible font-jetbrains col-span-2 md:col-span-1">
+                <div ref={mainRef} className=" text-white text-2xl leading-tight container overflow-visible font-jetbrains col-span-2 md:col-span-1">
                     <div className='w-[100%] overflow-visible rounded-lg p-4'>
                         <div className='titleLine flex flex-col justify-between'>
               

@@ -15,8 +15,8 @@ function Projects() {
             <TimelineProvider>
                 <AnimatedHeader headerText={"Projects"} />
                 <div className='grid grid-cols-2 container px-8 sm:px-20 gap-x-10 gap-y-10 drop-shadow-glowBlue'>
-                    <DiscordBotProject/>
-                    <PortfolioProject/>
+                    <DiscordBotProject gsapUp={false}/>
+                    <PortfolioProject gsapUp={true}/>
                 </div>
             </TimelineProvider>
         </>

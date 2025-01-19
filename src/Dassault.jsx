@@ -14,7 +14,7 @@ function Dassault() {
 
     useGSAP(() => {
 
-        timeline.from(mainContainer.current, {opacity: 0, duration: 1})
+        timeline.from(mainContainer.current, {opacity: 0, x: -15, duration: .5 }, "<")
     }, [timeline]);
     
 

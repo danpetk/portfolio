@@ -1,6 +1,5 @@
 import gsap from 'gsap'
 import {useGSAP} from '@gsap/react'
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useRef } from 'react';
 import { useTimeline } from './TimelineProvider';
 
@@ -8,20 +7,20 @@ import SkillItem from './SkillItem.jsx'
 
 
 
-function DiscordBotProject() {
+function DiscordBotProject({gsapUp}) {
 
     const timeline = useTimeline()
-
     let mainRef = useRef(null)
 
+    let animDirScale = gsapUp ? 1 : -1
     useGSAP(() => {
-        timeline.from(mainRef.current, {opacity: 0, duration: 3})
+        timeline.from(mainRef.current, {y:15 * animDirScale, opacity:0, duration: .45,}, "<")
     })
 
     return ( 
         <>  
-                <div ref={mainRef} className="text-white text-2xl leading-tight container overflow-visible  font-jetbrains col-span-2 md:col-span-1  ">
-                    <div className='w-[100%] overflow-visible  rounded-lg p-4'>
+                <div ref={mainRef} className="text-white text-2xl leading-tight container overflow-visible font-jetbrains col-span-2 md:col-span-1  ">
+                    <div className='w-[100%] overflow-visible  rounded-lg p-4 '>
                         <div className='titleLine flex flex-col justify-between'>
               
                             <div className='text-4xl'>Media Converter Discord Bot</div>

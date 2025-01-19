@@ -2,8 +2,6 @@ import GlowingHeader from './GlowingHeader'
 import BriefInfo from './BriefInfo'
 import WorkExperience from './WorkExperience'
 import Projects from './Projects'
-import { createContext, useContext, useState } from 'react'
-import AnimatedHeader from './AnimatedHeader'
 import ContactInfo from './ContactInfo'
 function App() {
 
@@ -15,7 +13,7 @@ function App() {
         <WorkExperience/>
         <Projects/>
         <ContactInfo/>
-        
+    
         
         {/*<div className='h-[3000px]'></div>*/}
       </div>

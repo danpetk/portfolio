@@ -11,11 +11,10 @@ const TimelineContext = createContext()
 
 export const TimelineProvider = ({ children }) => {
 
-  const scrollRef = useRef(null);
   const timeline = useRef(gsap.timeline())
 
   return (
-    <TimelineContext.Provider ref={scrollRef} value={timeline.current}>
+    <TimelineContext.Provider value={timeline.current}>
       {children}
     </TimelineContext.Provider>
   )

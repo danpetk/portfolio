@@ -48,7 +48,7 @@ function AnimatedHeader({headerText}) {
     
     return ( 
         <>    
-        <div className="font-argon text-cyan-400 drop-shadow-glowCyan text-4xl leading-tight container py-10 max-w-screen-2xl">
+        <div className="font-argon text-cyan-400 drop-shadow-glowCyan text-4xl leading-tight container py-4 max-w-screen-2xl">
             <div className='container'>
                 <div className='w-[100%] mt-10'>
 
