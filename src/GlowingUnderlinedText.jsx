@@ -14,8 +14,8 @@ function GlowingUnderlinedText({children, anchor, action, yellow=false}) {
         else{
             return ( 
                 <>  
-                    <a className={`relative inline-block text-cyan-400 group`} href={action}>{children}
-                        <span className={`absolute left-0 bottom-0 w-full h-0.5 bg-cyan-400 scale-x-0 origin-left transition-transform duration-300 ease-in-out group-hover:scale-x-100 rounded-lg`}></span>
+                    <a className={`relative inline-block text-sky-500 group`} href={action}>{children}
+                        <span className={`absolute left-0 bottom-0 w-full h-0.5 bg-sky-500 scale-x-0 origin-left transition-transform duration-300 ease-in-out group-hover:scale-x-100 rounded-lg`}></span>
                     </a> 
                 </>
             )   
