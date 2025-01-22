@@ -18,7 +18,7 @@ export default {
           "0 0px 65px rgba(0, 255, 0, .7)"
         ],
         glowCyan: [
-          "0 0px 25px rgba(34, 211, 238, .25)",
+          "0 0px 30px rgba(34, 211, 238, .35)",
           "0 0px 65px rgba(34, 211, 238, .7)"
         ],        
         glowYellow: [

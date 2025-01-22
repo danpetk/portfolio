@@ -17,7 +17,7 @@ function Links() {
     useGSAP(() => {
 
         let links = linksParentRef.current.querySelectorAll('div')
-        timeline.from(links, {x: -15, opacity: 0, duration: .5, stagger: .1}, "<")
+        timeline.from(links, {x: -15, autoAlpha: 0, duration: .5, stagger: .1}, "<")
     })
 
     return ( 

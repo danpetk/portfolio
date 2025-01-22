@@ -31,19 +31,19 @@ function GlowingHeader({headerTextArray}) {
             
         
         gsap.from('.typeeffect1 span', {
-            opacity: 0, 
+            autoAlpha: 0, 
             duration: 0.0001, 
             delay: 0.6, 
             stagger: 0.05, 
             onComplete: () => {
                 gsap.to('.typeeffect2 span', {
-                    opacity: 1, 
+                    autoAlpha: 1, 
                     duration: 0.0001, 
                     delay: 0.6, 
                     stagger: 0.05, 
                     onComplete: () => {
                         gsap.from('.blink', {
-                            opacity: 0, 
+                            autoAlpha: 0, 
                             delay: 0.3, 
                             duration: 0.001, 
                             yoyo: true, 

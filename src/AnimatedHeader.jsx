@@ -32,11 +32,11 @@ function AnimatedHeader({headerText}) {
         })
             
         timeline.to(headerBracketRef.current, {
-            opacity: 1,
+            autoAlpha: 1,
             duration: .2,
             x: 15,                 
         }).to(headerLetters, {
-            opacity: 1, 
+            autoAlpha: 1, 
             duration: 0.0001, 
             delay: 0.05, 
             stagger: 0.03, 
@@ -48,13 +48,13 @@ function AnimatedHeader({headerText}) {
     
     return ( 
         <>    
-        <div className="font-argon text-cyan-400 drop-shadow-glowCyan text-4xl leading-tight container py-4 max-w-screen-2xl">
+        <div className="font-argon text-cyan-400 text-4xl leading-tight container py-4 max-w-screen-2xl">
             <div className='container'>
                 <div className='w-[100%] mt-10'>
 
                             <span ref={headerBracketRef} className='headerBracket inline-block'>&gt;</span>
                             <span> </span>
-                            <span ref={headerTextRef} className='headerTypeEffect'>
+                            <span ref={headerTextRef} className='headerTypeEffect drop-shadow-glowCyan'>
                                 {headerText.split('').map((char,index) => {  
                                     return <span key={index}>{char}</span>
                                 })}

@@ -14,7 +14,7 @@ function PortfolioProject({gsapUp}) {
 
     let animDirScale = gsapUp ? 1 : -1
     useGSAP(() => {
-        timeline.from(mainRef.current, {y:15 * animDirScale, opacity:0, duration: .45,}, "<.1")
+        timeline.from(mainRef.current, {y:15 * animDirScale, autoAlpha:0, duration: .45,}, "<.1")
     })
 
     return ( 

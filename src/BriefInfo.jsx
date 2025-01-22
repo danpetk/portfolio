@@ -16,10 +16,10 @@ function BriefInfo() {
         const briefInfoTimeline = gsap.timeline()
 
         briefInfoTimeline
-        .from('.topinfo', {opacity: 0, y: -15, duration: 0.6, delay: 2.9, ease: "power1.out"})
-        .from('.midinfo', {opacity: 0, y: 15, duration: 0.6, ease: "power1.out"}, "<+=.1")
-        .from('.bottominfo', {opacity: 0, y: -15, duration: 0.6, ease: "power1.out"}, "<+=.1")
-        .from('.downArrow', {opacity: 0, y: 15, duration: .6,  ease: "power1.out"}, "<+=.1")        
+        .from('.topinfo', {autoAlpha: 0, y: -15, duration: 0.6, delay: 2.9, ease: "power1.out"})
+        .from('.midinfo', {autoAlpha: 0, y: 15, duration: 0.6, ease: "power1.out"}, "<+=.1")
+        .from('.bottominfo', {autoAlpha: 0, y: -15, duration: 0.6, ease: "power1.out"}, "<+=.1")
+        .from('.downArrow', {autoAlpha: 0, y: 15, duration: .6,  ease: "power1.out"}, "<+=.1")        
         
         //
         //gsap.from('.topinfo', {opacity: 0, y: -15, duration: 0.6, delay: 3.3, ease: "power1.out"})
