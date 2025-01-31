@@ -22,7 +22,7 @@ function AnimatedHeader({headerText}) {
         }
 
         gsap.set(headerLetters, {opacity: 0})
-        gsap.set(headerBracketRef.current, {opacity: 0, x: -15})
+  
 
         // Create trigger point for section animation
         ScrollTrigger.create({
@@ -31,10 +31,10 @@ function AnimatedHeader({headerText}) {
             start: "center 80%"
         })
             
-        timeline.to(headerBracketRef.current, {
-            autoAlpha: 1,
+        timeline.from(headerBracketRef.current, {
+            autoAlpha: 0,
             duration: .2,
-            x: 15,                 
+            x: -15,                 
         }).to(headerLetters, {
             autoAlpha: 1, 
             duration: 0.0001, 
@@ -54,10 +54,12 @@ function AnimatedHeader({headerText}) {
 
                             <span ref={headerBracketRef} className='headerBracket inline-block'>&gt;</span>
                             <span> </span>
-                            <span ref={headerTextRef} className='headerTypeEffect drop-shadow-glowCyan'>
+                            <span ref={headerTextRef} className='headerTypeEffect will-change-auto'>
+
                                 {headerText.split('').map((char,index) => {  
                                     return <span key={index}>{char}</span>
                                 })}
+
                             </span>
                 </div>
             </div>
