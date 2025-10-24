@@ -7,6 +7,8 @@ function WorkExperience() {
     
     return ( 
         <>    
+
+        
         <TimelineProvider>
             <AnimatedHeader headerText={"Work Experience"} />
             <Dassault />

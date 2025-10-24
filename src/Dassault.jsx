@@ -20,44 +20,84 @@ function Dassault() {
 
     return ( 
         <>  
-            <div ref={mainContainer} className=" text-white text-2xl leading-tight container overflow-visible px-8 sm:px-20  font-jetbrains">
-                <div className='w-[100%] overflow-visible border-neonheader rounded-lg p-4'>
-                    <div className='titleLine flex'>
-                        <img className='h-28 rounded-lg' src={dsLogo}></img>
-                        <div className='pl-4 flex flex-col justify-around'>
-                            <div className='text-4xl'>Dassault Systèmes</div>
-                            <div className='text-xl leading-10'>R&D Web Development Intern</div>
-                            <div className='text-xl'>May - Aug (2024/2025)</div>
-                        </div>
-                    </div>
-                    <div className='skillsList pt-2'>
-                        <SkillItem skillText={"JavaScript"}/> 
-                        <SkillItem skillText={"HTML"}/>
-                        <SkillItem skillText={"CSS"}/>
-                        <SkillItem skillText={"PHP"}/>  
-                        <SkillItem skillText={"SQL"}/>
-                        <SkillItem skillText={"Apache"}/>
-                        <SkillItem altColor={true} skillText={"Unit Testing"}/>
-                        <SkillItem altColor={true} skillText={"Source Control"}/>
-                        <SkillItem altColor={true} skillText={"Code Refactoring"}/>
-                        <SkillItem altColor={true} skillText={"Agile"}/>
+      <>
+  <div ref={mainContainer} className="text-white text-2xl leading-tight container overflow-visible px-8 sm:px-20 font-jetbrains">
+    <div className="w-full overflow-visible rounded-lg p-4 bg-[#0c0f14] border border-[#1a1f26]">
+      <div className="titleLine flex">
+        <img className="h-28 rounded-lg" src={dsLogo} alt="Dassault Systèmes Logo" />
+        <div className="pl-4 flex flex-col justify-around">
+          <div className="text-4xl">Dassault Systèmes</div>
+          <div className="text-xl leading-10">R&D Web Development Intern</div>
+          <div className="text-xl">May - Aug (2024/2025)</div>
+        </div>
+      </div>
 
-                    </div>
-                    <div className='skillsList pt-2 text-1.5xl md:text-xl'>
-                        <ul className='list-disc pl-6 pt-2 grid grid-cols-1 gap-2'>
-                            <li>Developed internal 3D-model library website using the XAMPP tech stack with users around the world</li>
-                            <li>Leveraged JS, HTML, and CSS for frontend development alongside PHP to interface with a MariaDB backend </li>
-                            <li>Migrated legacy codebase to use newer technologies; configured Apache server to host upgraded website</li>
-                            <li>Created both UI and backend unit tests to ensure proper functionality of website</li>
-                            <li>Worked within a Scrum framework with sprints, daily meetings, and retrospectives</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+      <div className="skillsList pt-2">
+        <SkillItem skillText={"JavaScript"} /> 
+        <SkillItem skillText={"HTML"} />
+        <SkillItem skillText={"CSS"} />
+        <SkillItem skillText={"PHP"} />  
+        <SkillItem skillText={"SQL"} />
+        <SkillItem skillText={"Apache"} />
+        <SkillItem altColor={true} skillText={"Unit Testing"} />
+        <SkillItem altColor={true} skillText={"Source Control"} />
+        <SkillItem altColor={true} skillText={"Code Refactoring"} />
+        <SkillItem altColor={true} skillText={"Agile"} />
+      </div>
+
+      <div className="skillsList pt-2 text-1.5xl md:text-xl">
+        <ul className="list-disc pl-6 pt-2 grid grid-cols-1 gap-2">
+          <li>Developed internal 3D-model library website using the XAMPP tech stack with users around the world</li>
+          <li>Leveraged JS, HTML, and CSS for frontend development alongside PHP to interface with a MariaDB backend </li>
+          <li>Migrated legacy codebase to use newer technologies; configured Apache server to host upgraded website</li>
+          <li>Created both UI and backend unit tests to ensure proper functionality of website</li>
+          <li>Worked within a Scrum framework with sprints, daily meetings, and retrospectives</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</>
+
            
         </>
     )
 }
 
 export default Dassault
+
+
+    //   <div ref={mainContainer} className=" text-white text-2xl leading-tight container overflow-visible px-8 sm:px-20  font-jetbrains">
+    //             <div className='w-[100%] overflow-visible border-neonheader rounded-lg p-4'>
+    //                 <div className='titleLine flex'>
+    //                     <img className='h-28 rounded-lg' src={dsLogo}></img>
+    //                     <div className='pl-4 flex flex-col justify-around'>
+    //                         <div className='text-4xl'>Dassault Systèmes</div>
+    //                         <div className='text-xl leading-10'>R&D Web Development Intern</div>
+    //                         <div className='text-xl'>May - Aug (2024/2025)</div>
+    //                     </div>
+    //                 </div>
+    //                 <div className='skillsList pt-2'>
+    //                     <SkillItem skillText={"JavaScript"}/> 
+    //                     <SkillItem skillText={"HTML"}/>
+    //                     <SkillItem skillText={"CSS"}/>
+    //                     <SkillItem skillText={"PHP"}/>  
+    //                     <SkillItem skillText={"SQL"}/>
+    //                     <SkillItem skillText={"Apache"}/>
+    //                     <SkillItem altColor={true} skillText={"Unit Testing"}/>
+    //                     <SkillItem altColor={true} skillText={"Source Control"}/>
+    //                     <SkillItem altColor={true} skillText={"Code Refactoring"}/>
+    //                     <SkillItem altColor={true} skillText={"Agile"}/>
+
+    //                 </div>
+    //                 <div className='skillsList pt-2 text-1.5xl md:text-xl'>
+    //                     <ul className='list-disc pl-6 pt-2 grid grid-cols-1 gap-2'>
+    //                         <li>Developed internal 3D-model library website using the XAMPP tech stack with users around the world</li>
+    //                         <li>Leveraged JS, HTML, and CSS for frontend development alongside PHP to interface with a MariaDB backend </li>
+    //                         <li>Migrated legacy codebase to use newer technologies; configured Apache server to host upgraded website</li>
+    //                         <li>Created both UI and backend unit tests to ensure proper functionality of website</li>
+    //                         <li>Worked within a Scrum framework with sprints, daily meetings, and retrospectives</li>
+    //                     </ul>
+    //                 </div>
+    //             </div>
+    //         </div>
 

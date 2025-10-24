@@ -44,8 +44,6 @@ function AnimatedHeader({headerText}) {
         
     }, [timeline]);
     
-    
-    
     return ( 
         <>    
         <div className="font-argon text-cyan-400 text-4xl leading-tight container py-4 max-w-screen-2xl">
