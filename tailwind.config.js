@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
       fontSize: {
-        '1.5xl': '1.375rem', // Adjust this value as needed (e.g., 22px equivalent in rem)
+        '1.5xl': '1.375rem', 
       },
       fontFamily: {
         "argon": ["Argon", "sans-serif"],

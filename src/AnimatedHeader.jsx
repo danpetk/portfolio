@@ -51,16 +51,15 @@ function AnimatedHeader({headerText}) {
         <div className="font-argon text-cyan-400 text-4xl leading-tight container py-4 max-w-screen-2xl">
             <div className='container'>
                 <div className='w-[100%] mt-10'>
+                    <span ref={headerBracketRef} className='headerBracket inline-block'>&gt;</span>
+                    <span> </span>
+                    <span ref={headerTextRef} className='headerTypeEffect will-change-auto'>
 
-                            <span ref={headerBracketRef} className='headerBracket inline-block'>&gt;</span>
-                            <span> </span>
-                            <span ref={headerTextRef} className='headerTypeEffect will-change-auto'>
+                        {headerText.split('').map((char,index) => {  
+                            return <span key={index}>{char}</span>
+                        })}
 
-                                {headerText.split('').map((char,index) => {  
-                                    return <span key={index}>{char}</span>
-                                })}
-
-                            </span>
+                    </span>
                 </div>
             </div>
         </div>

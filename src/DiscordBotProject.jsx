@@ -19,12 +19,12 @@ function DiscordBotProject({gsapUp}) {
 
     return ( 
         <>  
-                <div ref={mainRef} className="text-white text-2xl leading-tight container overflow-visible font-jetbrains col-span-2 md:col-span-1  ">
+                <div ref={mainRef} className="text-white text-2xl leading-tight container overflow-visible font-jetbrains col-span-2 md:col-span-1">
                     <div className='w-[100%] overflow-visible  rounded-lg p-4 '>
                         <div className='titleLine flex flex-col justify-between'>
               
                             <div className='text-4xl'>Media Converter Discord Bot</div>
-                            <div className='text-xl'>Jul 2023 - Jan 2024</div>
+                            {/* <div className='text-xl'>Jul 2023 - Jan 2024</div> */}
                             {/*<img className= 'h-40 w-[100%] rounded-lg mt-2'src={deepFry}></img>*/}
                     
                         </div>

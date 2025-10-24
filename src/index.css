@@ -9,7 +9,9 @@
     
     @screen md {
         html {
-            @apply bg-gradient-to-r from-secondary to-primary;
+            /* @apply bg-gradient-to-r from-secondary to-primary; */
+            /* @apply bg-black;     */
+            @apply bg-[#030303]
         }
     }
 }

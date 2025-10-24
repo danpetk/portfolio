@@ -39,16 +39,17 @@ function Dassault() {
                         <SkillItem skillText={"Apache"}/>
                         <SkillItem altColor={true} skillText={"Unit Testing"}/>
                         <SkillItem altColor={true} skillText={"Source Control"}/>
-                        <SkillItem altColor={true} skillText={"Refactoring"}/>
-                        <SkillItem altColor={true} skillText={"Teamwork"}/>
+                        <SkillItem altColor={true} skillText={"Code Refactoring"}/>
+                        <SkillItem altColor={true} skillText={"Agile"}/>
 
                     </div>
                     <div className='skillsList pt-2 text-1.5xl md:text-xl'>
                         <ul className='list-disc pl-6 pt-2 grid grid-cols-1 gap-2'>
-                            <li>Developed internal 3D model library website using the XAMPP tech stack with users around the world</li>
+                            <li>Developed internal 3D-model library website using the XAMPP tech stack with users around the world</li>
                             <li>Leveraged JS, HTML, and CSS for frontend development alongside PHP to interface with a MariaDB backend </li>
-                            <li>Migrated legacy codebase to use modern technologies; set up Apache server to host upgraded website</li>
+                            <li>Migrated legacy codebase to use newer technologies; configured Apache server to host upgraded website</li>
                             <li>Created both UI and backend unit tests to ensure proper functionality of website</li>
+                            <li>Worked within a Scrum framework with sprints, daily meetings, and retrospectives</li>
                         </ul>
                     </div>
                 </div>
