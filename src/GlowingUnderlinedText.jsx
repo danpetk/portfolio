@@ -5,7 +5,7 @@ function GlowingUnderlinedText({children, anchor, action, yellow=false}) {
         if(yellow){
             return ( 
                 <>  
-                    <a className={`relative inline-block text-yellow-400 group`} href={action}><span className="drop-shadow-glowYellow">{children}</span>
+                    <a className={`relative inline-block text-yellow-400 group`} href={action} target="_blank" rel="noopener noreferrer"><span className="drop-shadow-glowYellow">{children}</span>
                         <span className={`absolute left-0 bottom-0 w-full h-0.5 bg-yellow-400 scale-x-0 origin-left transition-transform duration-300 ease-in-out group-hover:scale-x-100 rounded-lg`}></span>
                     </a> 
                 </>
@@ -14,7 +14,7 @@ function GlowingUnderlinedText({children, anchor, action, yellow=false}) {
         else{
             return ( 
                 <>  
-                    <a className={`relative inline-block text-sky-500 group`} href={action}>{children}
+                    <a className={`relative inline-block text-sky-500 group`} href={action} target="_blank" rel="noopener noreferrer">{children}
                         <span className={`absolute left-0 bottom-0 w-full h-0.5 bg-sky-500 scale-x-0 origin-left transition-transform duration-300 ease-in-out group-hover:scale-x-100 rounded-lg`}></span>
                     </a> 
                 </>

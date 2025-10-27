@@ -13,7 +13,7 @@ function ProjectPlaceholder({gsapUp}) {
     useGSAP(() => {
         timeline.from(mainRef.current, {y:15 * animDirScale, autoAlpha:0, duration: .45,}, "<.1")
     })
-
+// 
     return ( 
     <>  
     {/* [#0a0d11] */}
@@ -24,8 +24,9 @@ function ProjectPlaceholder({gsapUp}) {
             <div className="w-3 h-3 rounded-full bg-[#ffbd2e] hover:bg-[#ffd05f] transition-colors"></div>
             <div className="w-3 h-3 rounded-full bg-[#27c93f] hover:bg-[#46d65b] transition-colors"></div>
             </div>
-            <div className="text-neutral-400 text-sm ml-4 select-none">Coming Soon</div>
-        </div>
+            <div className="text-neutral-400 font-jetbrains text-sm ml-4 select-none">
+                <span className="relative top-[1.5px]">Coming Soon</span>
+            </div>        </div>
 
         <div className="p-4 text-gray-100 text-2xl leading-tight font-jetbrains overflow-visible">
             <div className="container overflow-visible">

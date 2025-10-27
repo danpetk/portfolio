@@ -23,11 +23,19 @@ function ProjectEntry({previewText, title, tech, skills, content, link, gsapUp})
     <div ref={mainRef} className="bg-[#0c0f14] rounded-xl shadow-lg border border-[#1a1f26] overflow-hidden w-full max-w-4xl mx-auto">
         <div className="flex items-center gap-2 px-4 py-2 bg-[#10141a] border-b border-[#1a1f26]">
             <div className="flex gap-2">
-            <div className="w-3 h-3 rounded-full bg-[#ff5f56] hover:bg-[#ff7b73] transition-colors"></div>
-            <div className="w-3 h-3 rounded-full bg-[#ffbd2e] hover:bg-[#ffd05f] transition-colors"></div>
-            <div className="w-3 h-3 rounded-full bg-[#27c93f] hover:bg-[#46d65b] transition-colors"></div>
+                <div className="w-3 h-3 rounded-full bg-[#ff5f56]"></div> {/* hover:bg-[#ff7b73] transition-colors" */}
+                <div className="w-3 h-3 rounded-full bg-[#ffbd2e]"></div> {/* hover:bg-[#ffd05f] transition-colors */}
+                <div className="w-3 h-3 rounded-full bg-[#27c93f]"></div> {/* hover:bg-[#46d65b] transition-colors" */}
+                
             </div>
-            <div className="text-neutral-400 text-sm ml-4 select-none">{previewText}</div>
+            <div className="text-neutral-400 font-jetbrains text-sm ml-4 select-none">
+                <span className="relative top-[1.5px]">{previewText}</span>
+            </div>
+            {link && (
+                <div className="font-jetbrains text-sm ml-auto select-none">
+                    <a href={link} target="_blank" rel="noopener noreferrer" className="text-neonheader hover:text-[#00ff00] transition-colors duration-150 relative top-[1.5px]">REPOSITORY</a>
+                </div>
+            )}
         </div>
 
         <div className="p-4 text-gray-100 text-2xl leading-tight font-jetbrains overflow-visible">
@@ -64,3 +72,4 @@ function ProjectEntry({previewText, title, tech, skills, content, link, gsapUp})
 }
 
 export default ProjectEntry;
+
