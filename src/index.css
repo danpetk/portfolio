@@ -27,16 +27,16 @@
 }
 
 html {
-    font-size: 8px;
+    font-size: 7px;
     
     @screen md {
-        font-size: 10px;
+        font-size: 9px;
     }
     @screen lg {
-      font-size: 12px;
+      font-size: 11px;
     }
     @screen xl{
-        font-size: 14px
+        font-size: 13px
     }
     @screen 2xl{
         font-size: 15px;

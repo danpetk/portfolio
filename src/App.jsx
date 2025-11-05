@@ -13,10 +13,8 @@ function App() {
         <WorkExperience/>
         <Projects/>
         <ContactInfo/>
-
-
-        
-        {/*<div className='h-[3000px]'></div>*/}
+        <div className='sm:h-[30px]'></div>
+        <footer className='text-secondary'>nothing to see here :0</footer>
       </div>
     </>
   ) 

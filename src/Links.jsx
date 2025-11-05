@@ -26,8 +26,8 @@ function Links() {
         <div className="contactLinks text-white text-1.5xl text-center leading-tight container overflow-visible px-16 md:px-32 font-jetbrains mt-8">
             <div ref={linksParentRef} className='w-[100%] overflow-visible flex flex-col items-start gap-7'>
                 <div><img className="-translate-y-0.5 inline-block w-10 h-10 mr-4" src={EmailLogo}></img><span>danielpetkoski@outlook.com</span></div>
-                <div><img className="-translate-y-0.5 inline-block w-10 mr-4" src={GithubLogo}></img><GlowingUnderlinedText anchor={true} action={"https://github.com/DanielPetk"} color={"cyan-400"}>https://github.com/DanielPetk</GlowingUnderlinedText></div>
-                <div><img className="-translate-y-0.5 inline-block w-10 mr-4" src={LinkedInLogo}></img><GlowingUnderlinedText anchor={true} action={"https://www.linkedin.com/in/danielpetkoski/"} color={"cyan-400"}>https://www.linkedin.com/in/danielpetkoski/</GlowingUnderlinedText></div>
+                <div><img className="-translate-y-0.5 inline-block w-10 mr-4" src={GithubLogo}></img><GlowingUnderlinedText anchor={true} action={"https://github.com/DanielPetk"} color={"cyan-400"}>GitHub</GlowingUnderlinedText></div>
+                <div><img className="-translate-y-0.5 inline-block w-10 mr-4" src={LinkedInLogo}></img><GlowingUnderlinedText anchor={true} action={"https://www.linkedin.com/in/danielpetkoski/"} color={"cyan-400"}>LinkedIn</GlowingUnderlinedText></div>
             </div>
         </div>
     
