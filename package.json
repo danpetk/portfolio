@@ -1,6 +1,6 @@
 {
-  "name": "personal-portfolio-website",
-  "homepage": "https://DanielPetk.github.io/personal-website/",
+  "name": "portfolio-website",
+  "homepage": "https://danpetk.github.io/portfolio/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
