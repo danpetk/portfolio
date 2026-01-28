@@ -1,10 +1,24 @@
 import gsap from 'gsap'
 import {useGSAP} from '@gsap/react'
 
+
+function disableScroll() {
+  document.body.style.position = 'fixed';
+  document.body.style.left = '0';
+  document.body.style.right = '0';
+  document.body.style.overflowY="scroll"
+}
+
+function enableScroll() {
+  document.body.style.position = '';
+  document.body.style.top = '';
+}
+
 function GlowingHeader({headerTextArray}) {
 
     
     useGSAP(() => {
+        disableScroll()
         gsap.set(".typeeffect2 span", {opacity: 0})
        
         // const glowingHeaderTimeline = gsap.timeline()
@@ -29,7 +43,7 @@ function GlowingHeader({headerTextArray}) {
         //     repeatDelay: 0.63
         // });
             
-        
+        // We're not going to talk about this...
         gsap.from('.typeeffect1 span', {
             autoAlpha: 0, 
             duration: 0.0001, 
@@ -42,6 +56,8 @@ function GlowingHeader({headerTextArray}) {
                     delay: 0.6, 
                     stagger: 0.05, 
                     onComplete: () => {
+                        document.dispatchEvent(new Event("glowingHeaderFinished"))
+                        enableScroll()
                         gsap.from('.blink', {
                             autoAlpha: 0, 
                             delay: 0.3, 

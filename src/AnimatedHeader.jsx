@@ -25,10 +25,17 @@ function AnimatedHeader({headerText}) {
   
 
         // Create trigger point for section animation
-        ScrollTrigger.create({
+        let trigger = ScrollTrigger.create({
             animation: timeline,
             trigger: headerBracketRef.current,
             start: "center 80%"
+        })
+        trigger.disable()
+
+        // Listening to this event is probably not the most react way to do it
+        // But its easiest to do (atleast its not vibecoded)
+        document.addEventListener("glowingHeaderFinished", () => {
+            trigger.enable()
         })
             
         timeline.from(headerBracketRef.current, {
