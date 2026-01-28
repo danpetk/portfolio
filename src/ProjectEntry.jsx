@@ -60,7 +60,7 @@ function ProjectEntry({previewText, title, tech, skills, content, link, gsapUp})
                     }
                 </div>
 
-                <div className="pt-4 text-lg md:text-xl text-gray-300">
+                <div className="pt-4 text-lg md:text-xl text-white">
                     {content}
                 </div>
             </div>
