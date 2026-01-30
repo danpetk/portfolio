@@ -20,10 +20,10 @@ function Projects() {
 
                     <ProjectEntry
                         previewText={"Compiler"}
-                        title={"Compiler"}
+                        title={"Crescent Compiler"}
                         tech={["Rust", "Cargo"]}
-                        skills={["Socket Programming", "Multithreading"]}
-                        content={"Server and client of a cross-platform terminal-based group chat application. Used the POSIX sockets API for Linux and Winsock API for Windows to establish communication between clients and the server with TCP. Handled multiple open TCP connections with blocking I/O simultaneously using C++'s native multithreading library. Used FTXUI to render UI directly in the terminal."}
+                        skills={["Grammars","Compiler Design & Phases"]}
+                        content={"Developing a compiler for a custom programming language in Rust. Currently, I've implemented a lexer and recursive-descent parser from scratch to convert and input file into an abstract syntax tree. I'm planning to add semantic analysis and x86 assembly generation to complete the compiler pipeline, as well as user-defined data types and other language features." }
                         link={"https://github.com/danpetk/crescent-lang"}
                         gsapUp={false}
                     />
