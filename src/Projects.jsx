@@ -23,7 +23,7 @@ function Projects() {
                         title={"Crescent Compiler"}
                         tech={["Rust", "Cargo"]}
                         skills={["Grammars","Compiler Design & Phases"]}
-                        content={"Developing a compiler for a custom programming language in Rust. Currently, I've implemented a lexer and recursive-descent parser from scratch to convert and input file into an abstract syntax tree. I'm planning to add semantic analysis and x86 assembly generation to complete the compiler pipeline, as well as user-defined data types and other language features." }
+                        content={"Full compiler pipeline for a custom programming language in Rust, from source to output. I wrote a lexer and recursive descent parser to turn source code into a structured AST that represents the program's logic, and then validated that tree with semantic analysis. The compiler generates x86-64 (System V) assembly, allowing compiled programs to be assembled into binaries executable on compatible machines."}
                         link={"https://github.com/danpetk/crescent-lang"}
                         gsapUp={false}
                     />
@@ -33,7 +33,7 @@ function Projects() {
                         title={"Terminal Chat"}
                         tech={["C++", "CMake"]}
                         skills={["Socket Programming", "Multithreading"]}
-                        content={"Server and client of a cross-platform terminal-based group chat application. Used the POSIX sockets API for Linux and Winsock API for Windows to establish communication between clients and the server with TCP. Handled multiple open TCP connections with blocking I/O simultaneously using C++'s native multithreading library. Used FTXUI to render UI directly in the terminal."}
+                        content={"The server and client of a cross-platform terminal-based group chat application. I used the POSIX sockets API for Linux and the Winsock API for Windows to establish communication between clients and the server with TCP. I Handled multiple open TCP connections with blocking I/O simultaneously using C++'s native multithreading library and used FTXUI to render UI directly in the terminal."}
                         link={"https://github.com/danpetk/terminal-chat"}
                         gsapUp={true}
                     />
@@ -53,7 +53,7 @@ function Projects() {
                         title={"Media Conversion Discord Bot"}
                         tech={["Python", "FFmpeg", "Discord.py"]}
                         skills={["Async Code", "Regular exp."]}
-                        content={"Discord bot that modifies media to a user's liking. When provided with an image/video and a list of instructions, the bot downloads the video, parses the instructions using regular expressions, and then uses FFmpeg to apply the necessary conversions before sending it back to the user."}
+                        content={"This was my first big programming project. I wrote a Discord bot that modifies media to a user's liking. When provided with an image/video and a list of instructions, the bot downloads the video, parses the instructions using regular expressions, and then uses FFmpeg to apply the necessary conversions before sending it back to the user."}
                         link={null}
                         gsapUp={false}
                     />

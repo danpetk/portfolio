@@ -28,7 +28,7 @@ function Dassault() {
         <div className="pl-4 flex flex-col justify-around">
           <div className="text-4xl">Dassault Systèmes</div>
           <div className="text-xl leading-10">R&D Web Development Intern</div>
-          <div className="text-xl">May - Aug (2024/2025)</div>
+          <div className="text-xl">May - Aug (2026/2025/2024)</div>
         </div>
       </div>
 
@@ -47,11 +47,11 @@ function Dassault() {
 
       <div className="skillsList pt-2 text-1.5xl md:text-xl">
         <ul className="list-disc pl-6 pt-2 grid grid-cols-1 gap-2">
-          <li>Developed internal 3D-model library website using the XAMPP tech stack with users around the world</li>
+          <li>Worked on an internal 3D model library website built on the XAMPP tech stack with users around the world</li>
           <li>Leveraged JS, HTML, and CSS for frontend development alongside PHP to interface with a MariaDB backend </li>
-          <li>Migrated legacy codebase to use newer technologies; configured Apache server to host upgraded website</li>
-          <li>Created both UI and backend unit tests to ensure proper functionality of website</li>
-          <li>Worked within a Scrum framework with sprints, daily meetings, and retrospectives</li>
+          <li>Updated the site’s legacy codebase by upgrading dependencies, refactoring code, and resolving deprecations</li>
+          <li>Configured a production Apache server with an SSL certificate, database backup, etc. to have the site user-ready</li>
+          <li>Created both UI and backend unit tests to ensure proper functionality of the website</li>
         </ul>
       </div>
     </div>
