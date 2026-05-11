@@ -33,11 +33,15 @@ function MSU() {
         </div>
       </div>
 
-      <hr className="border-[#1a1f26] mt-4" />
+      {/* <hr className="border-[#1a1f26] mt-4" /> */}
 
+      <div className="skillsList pt-2">
+        <SkillItem skillText={"Bachelor of Science in Computer Science"} />
+        <SkillItem altColor={true} skillText={"Minor in Mathematics"} />
+      </div>
 
-      <div className="skillsList pt-4 text-1.5xl md:text-xl">
-        <div className="text-2xl">Bachelor of Science in Computer Science, Minor in Mathematics</div>
+      <div className="skillsList pt-2 text-1.5xl md:text-xl">
+        {/* <div className="text-2xl">Bachelor of Science in Computer Science, Minor in Mathematics</div> */}
         <ul className="list-disc pl-6 pt-2 grid grid-cols-1 gap-2">
             <li>4.0 GPA</li>
             <li>5x Dean's List</li>
